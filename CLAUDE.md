@@ -6,6 +6,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Two single-file browser games. No build step, no dependencies, no package manager. Both files are fully self-contained HTML with inline CSS and JS.
 
+## Git workflow
+
+After every meaningful change, commit and push:
+```
+git add <files>
+git commit -m "short description of what changed and why"
+git push
+```
+
+Commit after each logical unit of work — new feature, bug fix, visual change. Never batch unrelated changes into one commit. Keep messages specific (e.g. `fix zigzagger spawn bounds` not `updates`).
+
 ## Running
 
 ```
